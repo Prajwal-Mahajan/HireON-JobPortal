@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180" height="38" viewBox="0 0 180 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes typing {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    .logo-group {
+      opacity: 1;
+    }
+    .letter {
+      opacity: 0;
+      animation: typing 0.25s forwards;
+    }
+    .letter-H { animation-delay: 0.1s; }
+    .letter-i { animation-delay: 0.3s; }
+    .letter-r { animation-delay: 0.5s; }
+    .letter-e { animation-delay: 0.7s; }
+    .letter-O { animation-delay: 0.9s; }
+    .letter-N { animation-delay: 1.1s; }
+    .cursor {
+      animation: blink 1s step-end infinite;
+      opacity: 0;
+      animation-delay: 1.3s;
+      animation-fill-mode: forwards;
+    }
+    .dot {
+      animation: pulse 2s ease-in-out infinite;
+    }
+  </style>
+
+  <g class="logo-group">
+    <!-- Combined Logo -->
+    <g>
+      <!-- Stylized Magnifying Glass -->
+      <g transform="translate(10, 4)">
+        <circle cx="12" cy="14" r="12" stroke="#000000" stroke-width="3" fill="none"/>
+        <line x1="21" y1="23" x2="32" y2="32" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+        <!-- Inner detail -->
+        <path d="M8 10 Q 12 9, 16 10" stroke="#000000" stroke-width="2" fill="none"/>
+      </g>
+      
+      <!-- HireON -->
+      <text class="letter letter-H" x="45" y="28" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#000000">H</text>
+      <text class="letter letter-i" x="67" y="28" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#000000">i</text>
+      <text class="letter letter-r" x="77" y="28" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#000000">r</text>
+      <text class="letter letter-e" x="90" y="28" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#000000">e</text>
+      <text class="letter letter-O" x="105" y="28" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#000000">O</text>
+      <text class="letter letter-N" x="128" y="28" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#000000">N</text>
+    </g>
+
+    <!-- Cursor -->
+    <rect class="cursor" x="152" y="8" width="2" height="24" fill="#000000"/>
+
+    <!-- Dot -->
+    <circle class="dot" cx="167" cy="19" r="4" fill="#000000">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg> 
